@@ -1,0 +1,10 @@
+<p>Welcome to Giftopia, the ultimate destination for the best GIFs ever! Our website is a treasure trove of emotions, humor, and creativity, all encapsulated in the form of GIFs.</p>
+
+<div class="w-100 flex">
+    <button 
+        (click)="toggleAnimation()" 
+        [@buttonClickAnimation]="animationState"
+        (@buttonClickAnimation.done)="animationDone()"
+        class="bg-red-500 text-white bg-purple-600 rounded-lg px-4 py-2 mt-3 m-auto">
+        Click Me</button>
+</div>
